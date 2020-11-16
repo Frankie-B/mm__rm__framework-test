@@ -1,5 +1,5 @@
 {
-  "name": "(yo-test)",
+  "name": "example_banner",
   "version": "1.0.0",
   "description": "",
   "homepage": "",
@@ -14,8 +14,11 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@mediamonks/richmedia-temple-server": "^4.0.0",
-    "@mediamonks/temple": "^4.0.0",
-    "@mediamonks/henk": "^1.1.1"
+    "@mediamonks/henk": "^1.1.1",
+    "@mediamonks/richmedia-temple-server": "^3.0.2",
+    "@mediamonks/temple": "^2.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6"
   }
 }

@@ -1,24 +1,26 @@
+import StaggerAnimation from '@mediamonks/temple/animation/StaggerAnimation';
+
 export default class Animation {
-  /**
-   *
-   * @param {HTMLDivElement} container
-   */
-  constructor(container, config) {
-    this.container = container;
-    this.config = config;
+/**
+*
+* @param {HTMLDivElement} container
+*/
+constructor(container, config) {
+ this.container = container;
+ this.config = config;
+}
 
-    this.fadeIn = new TimelineMax({pause: true});
-    this.fadeIn.to(".banner", 1, {opacity: 1});
+createTimeline = obj => {
+ var tl = new TimelineMax(obj);
+ tl.to(".banner", 1, {opacity: 1});
 
-  }
+ return tl;
+};
 
-  async playFadeIn() {
-    this.fadeIn.play();
-  }
-
-  async playFadeOut() {
-    const tl = new TimelineMax({pause: true});
-    tl.to(".banner", 1, {opacity: 0});
-    tl.play();
-  }
+/**
+*
+* @return {Promise<void>}
+* @private
+*/
+async play() {}
 }

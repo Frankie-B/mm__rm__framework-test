@@ -9,9 +9,5 @@
       "height": 250
     }
   },
-  "content": {
-    "text": "Welcome to this Banner!",
-    "cta": "Click here",
-    "bgcolor": "#FF0000"
-  }
+  "content": {}
 }
